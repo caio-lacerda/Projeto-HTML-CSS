@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"> 
+		<title>Contato - Barbearia Alura</title>
+		<link rel="stylesheet" href="reset.css"> <!– o reset.css deve ser adicionado primeiro para "limpar" o estilo pre-definido do navegador e depois adicionar o estilo que esta sendo criado ->
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<header>
+			<div class="caixa">
+				<h1> <img src="logo.png" alt="logo da barbearia alura"> </h1> 
+
+				<nav>		 <!– Esta é uma tag de navegação, que indica referencia a links externos–>
+					<ul>
+						<li><a href="index.html"> Home </a></li> 
+						<li><a href="produtos.html>"> Produtos </li></a>
+						<li><a href="contato.html"> Contato </a></li>
+
+					</ul>
+				<nav>
+			</div>
+		</header>
+
+		<main>
+			<form>
+				<label for="nomeSobrenome">Nome e sobrenome</label>
+				<input type="text" id="nomeSobrenome" class="input-padrao" required>
+
+				<label for="email">E-mail</label>
+				<input type="email" id="email" class="input-padrao" required placeholder = "seuemail@dominio.com">
+
+				<label for="telefone">Telefone</label>
+				<input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+				<label for="mensagem">Mensagem</label>
+				<textarea cols="60" rows="10" id="mensagem" class="input-padrao"></textarea>
+
+				<fieldset> <!–O elemento fieldset é uma maneira conveniente de criar grupos de widgets que compartilham o mesmo propósito->
+
+					<legend>Como prefere nosso contato?</legend>
+					<label for = "radio-email"><input type="radio" name="contato" value="E-mail" id="radio-email">E-mail</label>
+					<!– O marcador "name" garante que os tres inputs radio são do mesmo grupo e permite a seleção de apenas um na pagina->
+
+
+					<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+				
+
+					<label for="radio-whatsapp"><input type="radio" name="contato" value="Whatsapp" id="radio-whatsapp">Whatsapp</label>
+					  
+				</fieldset>
+
+				<fieldset>
+					<legend>Qual horário de preferência?</legend>
+					<select>
+						<option>Manhã</option>
+						<option>Tarde</option>
+						<option>Noite</option>
+
+					</select>
+				</fieldset>
+
+				<label class="novidades"><input type="checkbox" checked>Gostaria de receber nossas novidades por e-mail?</label>
+
+				<input type="submit" value="Enviar Formulário" class="enviar">
+
+			</form>
+
+			<table>
+
+				<thead>
+					<tr>
+						<th colspan="2">Horário de Funcionamento</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td>Dia</td>
+						<td>Horário</td>
+					</tr>
+
+					<tr>
+						<td>Segunda</td>
+						<td>8h às 20h</td>
+					</tr>
+
+					<tr>
+						<td>Quarta</td>
+						<td>8h às 20h</td>
+					</tr>
+
+					<tr>
+						<td>Sexta</td>
+						<td>8h às 20h</td>
+					</tr>
+				</tbody>
+
+			</table>
+
+		</main>
+
+		<footer>
+			<img src="logo-branco.png" alt="Logo da barbearia alura">
+			<p> &copy; Copyright Barbearia Alura 2020
+
+		</footer>
+	</body>
+
+</html>
